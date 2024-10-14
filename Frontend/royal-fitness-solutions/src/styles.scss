@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-colour: #102037;  
+    --secondary-colour: #e6d39cd1; 
+    --tertiary-colour: #fff;  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 430px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        margin: 0;
+        padding: 0;
+    }
+}
