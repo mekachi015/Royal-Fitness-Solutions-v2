@@ -1,0 +1,206 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Makes the container stretch to fit its items */
+    background-color: #fff; /* Matches user profile background */
+    padding: 2rem; /* Matches padding of user profile */
+    border-radius: 10px; /* Matches border-radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Same shadow as user profile */
+    width: 80%; /* Uniform with user profile */
+    max-width: 1000px; /* Same max width */
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%; /* Ensures full width for all input fields */
+    padding: 12px; /* Increased padding for better touch targets */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.gender-checkboxes {
+    display: flex;
+    justify-content: space-between; /* Spaces out checkboxes */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 45%; /* Slightly adjusted width to fit in smaller containers */
+    padding: 12px; /* Increased padding for better touch targets */
+    background-color: var(--primary-colour);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0; /* Added margin for spacing between buttons */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button:last-child {
+    margin-top: 10px; /* Adds space above the second button */
+}
+
+button:hover {
+    background-color: var(--secondary-colour);
+}
+
+@media (max-width: 430px) {
+    .form-container {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    #fitnessGoals {
+        width: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    h3, h4 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .input-group {
+        margin-bottom: 15px; /* Space between input groups */
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between; /* This will put space between the buttons */
+        margin-top: 10px; /* Space above the button group */
+        width: 100%; /* Ensure the button container takes full width */
+    }
+    
+    button {
+        width: 48%; /* Adjust button width to fit well in the available space */
+        padding: 12px; /* Increased padding for better touch targets */
+        background-color: var(--primary-colour);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 5px 0; /* Add margin between the buttons */
+    }
+    
+    button:hover {
+        background-color: var(--secondary-colour);
+    }
+
+    button[type="button"] {
+        background-color: var(--primary-colour);
+    }
+
+    button[type="button"]:hover {
+        background-color: var(--secondary-colour);
+    }
+
+}
+
+@media (min-width: 430px) {
+    .form-container {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    #fitnessGoals {
+        width: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    h3, h4 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .input-group {
+        margin-bottom: 15px; /* Space between input groups */
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--primary-colour);
+        color: white;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: var(--secondary-colour);
+    }
+
+    button[type="button"] {
+        background-color: var(--primary-colour);
+    }
+
+    button[type="button"]:hover {
+        background-color: var(--secondary-colour);
+    }
+}

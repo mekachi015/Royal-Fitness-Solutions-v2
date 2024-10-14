@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,11 @@ import { UserProfileComponentComponent } from './components/user-profile-compone
 import { MealPlanComponentComponent } from './components/meal-plan-component/meal-plan-component.component';
 import { TrainingPlanComponentComponent } from './components/training-plan-component/training-plan-component.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { HomePageProfileComponent } from './components/home-page-profile/home-page-profile.component';
+import { BmiCalculatorComponent } from './components/bmi-calculator/bmi-calculator.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +39,19 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
     UserProfileComponentComponent,
     MealPlanComponentComponent,
     TrainingPlanComponentComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    HomePageProfileComponent,
+    BmiCalculatorComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatStepperModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
