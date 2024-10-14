@@ -1,0 +1,195 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 97%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    resize: none; /* Prevents resizing of text areas */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 40%; /* Set button to full width */
+    padding: 12px;
+    background-color: var(--primary-colour);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px 0; /* Margin for spacing between buttons */
+}
+
+button:last-child {
+    margin-top: 10px; /* Add space above the second button */
+}
+
+button:hover {
+    background-color: var(--secondary-colour);
+}
+
+@media (max-width: 430px) {
+    .form-container {
+        padding: 15px; /* Add padding around the form container */
+        font-size: 14px; /* Smaller font size for better fit */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust header size */
+        text-align: center; /* Center the header */
+        margin-bottom: 15px; /* Space below the header */
+    }
+
+    form {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    label {
+        margin-bottom: 5px; /* Space between label and input/textarea */
+        font-weight: bold; /* Make labels bold for emphasis */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        padding: 10px; /* Add padding for input fields and textareas */
+        border: 1px solid #ccc; /* Light border */
+        border-radius: 4px; /* Rounded corners */
+        font-size: 14px; /* Match input font size */
+        width: 100%; /* Full width for inputs and textareas */
+        box-sizing: border-box; /* Include padding in width */
+        margin-bottom: 15px; /* Space between input fields */
+    }
+
+    textarea {
+        resize: vertical; /* Allow vertical resizing only */
+    }
+
+    .buttons {
+        display: flex; /* Use flexbox for button layout */
+        justify-content: space-between; /* Space out buttons */
+    }
+
+    button {
+        padding: 10px; /* Add padding to buttons */
+        font-size: 14px; /* Button font size */
+        cursor: pointer; /* Pointer cursor for buttons */
+        border: none; /* Remove default border */
+        border-radius: 4px; /* Rounded corners */
+        background-color: var(--primary-colour); /* Primary button color */
+        color: white; /* White text */
+        transition: background-color 0.3s; /* Smooth color transition */
+        flex: 1; /* Allow buttons to grow */
+        margin-right: 10px; /* Space between buttons */
+    }
+
+    button:last-child {
+        margin-right: 0; /* Remove right margin for the last button */
+    }
+
+    button:hover {
+        background-color: var(--secondary-colour); /* Change color on hover */
+    }
+}
+
+@media (min-width: 430px) {
+    .form-container {
+        padding: 15px; /* Add padding around the form container */
+        font-size: 14px; /* Smaller font size for better fit */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust header size */
+        text-align: center; /* Center the header */
+        margin-bottom: 15px; /* Space below the header */
+    }
+
+    form {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    label {
+        margin-bottom: 5px; /* Space between label and input/textarea */
+        font-weight: bold; /* Make labels bold for emphasis */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        padding: 10px; /* Add padding for input fields and textareas */
+        border: 1px solid #ccc; /* Light border */
+        border-radius: 4px; /* Rounded corners */
+        font-size: 14px; /* Match input font size */
+        width: 100%; /* Full width for inputs and textareas */
+        box-sizing: border-box; /* Include padding in width */
+        margin-bottom: 15px; /* Space between input fields */
+    }
+
+    textarea {
+        resize: vertical; /* Allow vertical resizing only */
+    }
+
+    .buttons {
+        display: flex; /* Use flexbox for button layout */
+        justify-content: space-between; /* Space out buttons */
+    }
+
+    button {
+        padding: 10px; /* Add padding to buttons */
+        font-size: 14px; /* Button font size */
+        cursor: pointer; /* Pointer cursor for buttons */
+        border: none; /* Remove default border */
+        border-radius: 4px; /* Rounded corners */
+        background-color: var(--primary-colour); /* Primary button color */
+        color: white; /* White text */
+        transition: background-color 0.3s; /* Smooth color transition */
+        flex: 1; /* Allow buttons to grow */
+        margin-right: 10px; /* Space between buttons */
+    }
+
+    button:last-child {
+        margin-right: 0; /* Remove right margin for the last button */
+    }
+
+    button:hover {
+        background-color: var(--secondary-colour); /* Change color on hover */
+    }
+}
