@@ -22,6 +22,7 @@ import { HomePageProfileComponent } from './components/home-page-profile/home-pa
 import { BmiCalculatorComponent } from './components/bmi-calculator/bmi-calculator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TrainingPlanComponentComponent,
     AdminDashboardComponent,
     HomePageProfileComponent,
-    BmiCalculatorComponent
+    BmiCalculatorComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,37 @@
-<p>admin-dashboard works!</p>
+<div class="admin-dashboard">
+    <h1>Admin Dashboard</h1>
+    
+    <div class="user-list">
+        <h2>User List</h2>
+        <ul>
+            <li *ngFor="let user of users; let i = index">
+                <div class="user-info"> <!-- Flex container -->
+                    <span>{{ user.name }}</span>
+                    <button (click)="toggleUserDetails(i)" class="view-details">
+                        {{ expandedUsers[i] ? 'View Less' : 'View Details' }}
+                    </button>
+                </div>
+                <div class="user-details" [class.hidden]="!expandedUsers[i]">
+                    <h3>User Details</h3>
+                    <p><strong>BMI:</strong> {{ user.bmi }}</p>
+                    
+                    <h4>Meal Plan Questionnaire:</h4>
+                    <p>Favorite Cuisine: {{ user.mealPlanAnswers.favoriteCuisine }}</p>
+                    <p>Food Allergies: {{ user.mealPlanAnswers.foodAllergies }}</p>
+                    <p>Daily Caloric Intake: {{ user.mealPlanAnswers.dailyCaloricIntake }}</p>
+                    
+                    <h4>Training Questionnaire:</h4>
+                    <p>Fitness Goals: {{ user.trainingPlanAnswers.fitnessGoals }}</p>
+                    <p>Previous Experience: {{ user.trainingPlanAnswers.previousExperience }}</p>
+                    <p>Preferred Workout Days: {{ user.trainingPlanAnswers.preferredWorkoutDays }}</p>
+                    
+                    <div class="upload-plans">
+                        <h4>Upload Plans</h4>
+                        <button class="upload-meal-plan">Upload Meal Plan</button>
+                        <button class="upload-training-plan">Upload Training Plan</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

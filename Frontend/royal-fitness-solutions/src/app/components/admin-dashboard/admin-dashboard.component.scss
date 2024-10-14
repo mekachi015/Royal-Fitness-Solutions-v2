@@ -1,0 +1,141 @@
+.admin-dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px; /* Adjusted for mobile */
+    text-align: center; /* Center the title */
+}
+
+// .user-list {
+//     margin-top: 20px;
+// }
+
+// .user-list ul {
+//     list-style-type: none;
+//     padding: 0;
+// }
+
+// .user-list li {
+//     background: white;
+//     border: 1px solid #ddd;
+//     margin-bottom: 10px;
+//     padding: 15px;
+//     border-radius: 5px;
+//     position: relative;
+//     transition: box-shadow 0.3s; /* Add transition for hover effect */
+// }
+
+// .user-list li:hover {
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+// }
+
+// .user-details {
+//     margin-top: 15px;
+// }
+
+.user-info {
+    display: flex;               /* Use flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center;        /* Center items vertically */
+    margin-bottom: 10px;       /* Space below the user info */
+}
+
+/* Optional: Style the span for better appearance */
+.user-info span {
+    font-weight: bold;          /* Make username bold */
+    color: #333;               /* Change color if needed */
+}
+
+/* Optional: Adjust button styles for consistency */
+.view-details {
+    padding: 5px 10px;         /* Button padding */
+    border: none;              /* Remove default border */
+    border-radius: 4px;       /* Rounded corners */
+    background-color: var(--primary-colour); /* Primary color */
+    color: white;              /* Button text color */
+    cursor: pointer;           /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.view-details:hover {
+    background-color: var(--secondary-colour); /* Change on hover */
+}
+
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin-left: 10px;
+    padding: 8px 12px; /* Increased padding for better touch targets */
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-colour);
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Adjusted button font size */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: var(--secondary-colour) /* Hover color */
+}
+
+.upload-plans {
+    margin-top: 15px; /* Space above upload plans section */
+}
+
+.upload-plans button {
+    margin-top: 5px; /* Space between upload buttons */
+    width: 100%; /* Full width for mobile buttons */
+}
+
+@media (max-width: 430px) {
+    .admin-dashboard {
+        padding: 15px; /* Adjust padding for mobile view */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .user-list li {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        padding: 10px; /* Increase button padding for better touch targets */
+        font-size: 16px; /* Button font size for better readability */
+    }
+
+    .upload-plans button {
+        padding: 10px; /* Ensure consistent button size */
+    }
+}
+
+@media (min-width: 430px) {
+    .admin-dashboard {
+        padding: 15px; /* Adjust padding for mobile view */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .user-list li {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        padding: 10px; /* Increase button padding for better touch targets */
+        font-size: 16px; /* Button font size for better readability */
+    }
+
+    .upload-plans button {
+        padding: 10px; /* Ensure consistent button size */
+    }
+}
