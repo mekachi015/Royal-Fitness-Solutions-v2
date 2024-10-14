@@ -106,8 +106,31 @@ nav {
     border-bottom: 2px solid var(--secondary-colour);
 }
 
-/* Media queries for screens smaller than 430px */
-@media (min-width: 430px) {
+
+@media (max-width: 430px) { //Phones with bigger screens
+    .navbar-container{
+        position: sticky; /* Make the navbar sticky */
+        top: 0; /* Stay at the top */
+        z-index: 1000; /* Ensure it stays on top of other content */
+    }
+    nav {
+        padding: 10px 20px;
+    }
+
+    .link-items {
+        display: none; /* Hide desktop menu */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger */
+    }
+
+    .mobile-menu{
+        opacity: 95%
+    }
+}
+
+@media (min-width: 430px) { //Iphone 14 pro max
     .navbar-container{
         position: sticky; /* Make the navbar sticky */
         top: 0; /* Stay at the top */
